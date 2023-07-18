@@ -52,7 +52,6 @@ class Landscape_Generation(object):
         return self.__ground_icon
 
 
-        
     def put_landscape_to(self, any_map):    
         self.__water_generation(any_map)
         self.__water_generation(any_map)
