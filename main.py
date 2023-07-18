@@ -218,8 +218,3 @@ if __name__ == '__main__':
         draw_display()
         time.sleep(DELAY)
         delta_for_fps = time.time() - start
-        
-        # stop_update = (count == 2000)
-    
-
-    
