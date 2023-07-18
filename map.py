@@ -2,11 +2,8 @@ import copy, random
 from game_object import Game_Object
 from my_console import Output_menu
 
-# random.seed(1)
-# генерацию можно вынести отдельно
 
 class Map(object):
-
     __size_x = 10
     __size_y = 10
     __console_size = 10
@@ -42,27 +39,8 @@ class Map(object):
 
     def get_matrix(self) -> list:
         return self.__map_matrix + self.__console_matrix
+
     
-
-    '''
-    # def get_matrix(self) -> list:
-        # res = []
-        # for i in self.__map_matrix:
-            # res.append(str(''.join(i)))
-        # res.append(' ')
-        # return res
-
-
-    # def add_line(self, any_matrix):
-    #     for str in any_matrix:
-    #         self.__map_matrix.append(str)
-
-
-    # def print_map(self) -> None:
-    #     for i in self.__map_matrix:
-    #         print(*i, sep='')
-
-'''  
     def add_console_lines(self, menu_matrix, index = 0):
         for line in menu_matrix:
             self.__console_matrix[index] = list(line)
