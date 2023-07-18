@@ -194,21 +194,7 @@ class Event_handler(object):
     
     def __init__(self, func_list):
         self.__func_list = func_list    
-    
-    '''
-    # def run(self, count, step_for_count, use_predicate_list, predicate = True):
-    #     if count % step_for_count == 0 and predicate:
-    #         for item in self.__func_list:
-    #             if use_predicate_list:
-    #                 if item[1]:
-    #                     func = item[0]
-    #                     args = item[2:]
-    #                     func(*args)
-    #             else:
-    #                 func = item[0]
-    #                 args = item[1:]
-    #                 func(*args)    
-    '''    
+
     
     def run(self, count, periodicity, predicate = True):
         if int(count) % int(periodicity) == 0 and predicate:
